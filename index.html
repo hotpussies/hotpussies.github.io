@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="arteom37.github.io : ">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>arteom37.github.io</title>
+    
+    
+
+
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/hotpussies">View on GitHub</a>
+
+          <h1 id="project_title">hotpussies.github.io</h1>
+          <h2 id="project_tagline"></h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>
+<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+<p> Welcome! This page is primarily designed to be a place, where i can write the solutions down and share them for the pulic view, while the github pages seems to be very reasonably contructed for this purpose. So, well, let the first one be a small fact on the theory of self-adjoint operators, which i have found while going through the lecture notes on the course i take this semester.</p>
+<h1> Spectral radius and the norm of self-adjoint operator</h1>
+<p>Let $X, Y$ be Hilbert spaces and let $T \in \mathcal{B}(X, Y)$ be a self-adjoint operator. I would like to prove that $||T|| = r(T)$ </p>
+<p> First, applying the C*-identity, we claim that $||T^{*}T||=||T||$, then by induction $||T^{2^{n}}||=||T||^{2^{n}}$. The next step is to apply the Berling formula: indeed $$r(T) = \lim_{n \to \infty}{||T^{n}||^{\frac{1}{n}}}=\lim_{n \to \infty}{||T^{2n}||^{\frac{1}{2n}}}=||T||$$</p>
+
+<h2> Spectrum of an idempotent element</h2>
+<p> Lemma: Let $A$ be a unital algebra and $a \in A$ be an idempotenent element, i.e. satisfiying the $a^{2}=a$. Then the $\sigma(a) = \{0, 1 \}$. 
+Proof: Let's consider the $f(x) = x-x^{2}$ Since the polynomial calculus preserves the spectrum, i.e. $\sigma(f(a))=f(\sigma(a))$, $\sigma(f(a))=\sigma(a-a^{2})=\sigma(0)=0$, on the other hand, $f(\sigma(a))=\sigma(a)-\sigma(a)^{2}=0$, then $\sigma(a) = \{0, 1 \}$.
+</p>
+
+<h3> Schauder compactness theorem</h3>
+<p> Theorem: (Schauder compactness theorem) 
+Let $T \in \mathcal{B}(X, Y)$, then $T$ is a compact operator iff $T^{*}$ (Banach adjoint) is a compact operator.</p>
+
+<h3> Dini theorem </h3>
+<p> This is a small note regarding the classical Dini theorem, which establishes the condition in which pointwise convergence impies unifrom. </p>
+<p> <b> Dini theorem</b> Let $X$ be a compact metric space and let $\{ f_{n} \}$ be a monotonically increasing sequence ($f_{n}(x) \leq f_{n+1}(x))$ for each $x \in X$). Then if the pointwise limit is continuous, then the sequence converges uniformly. </p>
+<p> <b> Proof</b> Let $\epsilon > 0$ given. Let $g_{n} = f -f_{n}$ for each $n$ and let $E_{n}$ be a set of all $x$ such that $|g_{n}(x)| < \epsilon$. Since $g$ is continuous, then each $E_{n}$ is open. Since $f_{n}$ is monotonically increasing, then $g_{n}$ is decresing, then $\{ E_{n} \}$ is ascending. $\{E_{n} \}$ is an open cover of X, since $f_{n} \rightarrow f$ pointwise. Then, by compactness of $X$, there exists an finite subcover. Since $\{ E_{n} \}$ is ascending, then the biggest of all the elements of the cover is a cover of $X$, in other words, for some $N$ $\{E_{N}\}$ is a cover of $X$. Then, if $n > N, x \in X$, then $|f_{n}(x)-f(x)| < \epsilon$, as desired.</p>
+
+<h4> Baire category theorem</h4>
+<p> <a href="http://arteom37.github.io/Baire_category_theorem.html"> Look here!</a>  </p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p>Published with <a href="http://github.pages.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
